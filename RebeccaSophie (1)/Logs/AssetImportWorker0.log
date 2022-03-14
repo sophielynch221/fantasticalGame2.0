@@ -1010,3 +1010,9 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1961.848364 seconds.
+  path: Assets/Scenes/Sophie.unity
+  artifactKey: Guid(c48ed0629f3112540843f9a688e9e7fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Sophie.unity using Guid(c48ed0629f3112540843f9a688e9e7fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa3231b9be25a4578c5dc0ec627dd341') in 0.035949 seconds 
