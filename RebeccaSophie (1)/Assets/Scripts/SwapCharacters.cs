@@ -8,6 +8,8 @@ public class SwapCharacters : MonoBehaviour
     bool swap;
     public GameObject Girl;
     public GameObject penguin;
+    public Camera girlCamera;
+    public Camera penguinCamera;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,49 +19,45 @@ public class SwapCharacters : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (swap)
+        if (swap) //girl is active
         {
+            //camera
+          //  girlCamera.enabled = true;
+           // penguinCamera.enabled = false;
+
             //so penguin would follow
             penguin.GetComponent<NavMeshAgent>().enabled = true;
-            penguin.GetComponent<Follow>().enabled = false;
+            penguin.GetComponent<Follow>().enabled = true;
 
             //so girl isnt following
             Girl.GetComponent<NavMeshAgent>().enabled = false;
-            Girl.GetComponent<Follow>().enabled = true;
+            Girl.GetComponent<Follow>().enabled = false;
 
             //girl can run
-            Girl.GetComponent<NavMeshAgent>().enabled = false;
-            Girl.GetComponent<Follow>().enabled = true;
-          //  Girl.GetComponent<ThirdPersonController>().enabled = true;
             Girl.GetComponent<CharacterController>().enabled = true;
 
             //penguin cant run
-            penguin.GetComponent<NavMeshAgent>().enabled = true;
-            penguin.GetComponent<Follow>().enabled = false;
-           // penguin.GetComponent<ThirdPersonController>().enabled = false;
             penguin.GetComponent<CharacterController>().enabled = false; 
         }
 
-        if (!swap)
+        if (!swap) //penguin
         {
+            //camera
+           // penguinCamera.enabled = true;
+            // girlCamera.enabled = false;
+
             // so penguin wont follow
             penguin.GetComponent<NavMeshAgent>().enabled = false;
-            penguin.GetComponent<Follow>().enabled = true;
+            penguin.GetComponent<Follow>().enabled = false;
 
-            // so girl wont run
+            // so girl will follow
             Girl.GetComponent<NavMeshAgent>().enabled = true;
-            Girl.GetComponent<Follow>().enabled = false;
+            Girl.GetComponent<Follow>().enabled = true;
 
             //penguin can run
-            penguin.GetComponent<NavMeshAgent>().enabled = false;
-            penguin.GetComponent<Follow>().enabled = true;
-            //penguin.GetComponent<ThirdPersonController>().enabled = true;
             penguin.GetComponent<CharacterController>().enabled = true;
 
             //girl cant run
-            Girl.GetComponent<NavMeshAgent>().enabled = true;
-            Girl.GetComponent<Follow>().enabled = false;
-          //  Girl.GetComponent<ThirdPersonController>().enabled = false;
             Girl.GetComponent<CharacterController>().enabled = false;
         }
     }
