@@ -21,4 +21,19 @@ public class UiActions : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void OpenPianoScene()
+    {
+        SceneManager.LoadScene("Piano");
+    }
+
+    public void OpenJigsawScene()
+    {
+        SceneManager.LoadScene("Jigsaw");
+    }
+
+    public void OpenMainScene()
+    {
+        SceneManager.LoadScene("Sophie");
+    }
 }
