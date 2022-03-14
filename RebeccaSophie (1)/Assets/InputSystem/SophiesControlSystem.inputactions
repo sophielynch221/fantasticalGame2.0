@@ -1,0 +1,34 @@
+{
+    "name": "SophiesControlSystem",
+    "maps": [
+        {
+            "name": "ChangeCharacters",
+            "id": "8d8537a0-4d59-4fc1-8945-4fde3a4864b2",
+            "actions": [
+                {
+                    "name": "changecharacter",
+                    "type": "Button",
+                    "id": "03c812f3-9baf-4fc1-9dac-5c2844651aa8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "0f3f32f2-d874-43ae-af16-775bf01bc648",
+                    "path": "<Keyboard>/backspace",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "changecharacter",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
