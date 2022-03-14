@@ -8,6 +8,7 @@ public class Follow : MonoBehaviour
 
     NavMeshAgent myAgent;
     public Transform followcharacter;
+
     // Start is called before the first frame update
     void Start()
     {
