@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class SwapCharacters : MonoBehaviour
 {
-    bool swap;
+    public bool swap;
     public GameObject Girl;
     public GameObject penguin;
     public Camera girlCamera;
