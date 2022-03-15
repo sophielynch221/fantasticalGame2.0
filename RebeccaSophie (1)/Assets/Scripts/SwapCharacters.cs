@@ -6,8 +6,8 @@ using UnityEngine.AI;
 public class SwapCharacters : MonoBehaviour
 {
     public bool swap;
-    public GameObject Girl;
-    public GameObject penguin;
+  //  public GameObject Girl;
+    //public GameObject penguin;
 
     public GameObject Girlchildgirl;
     public GameObject penguinchildgirl;
@@ -18,8 +18,8 @@ public class SwapCharacters : MonoBehaviour
     //public Transform girlPosition;
     //public Transform penguinPosition;
 
-    public Camera girlCamera;
-    public Camera penguinCamera;
+   // public Camera girlCamera;
+    //public Camera penguinCamera;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,12 +36,12 @@ public class SwapCharacters : MonoBehaviour
            // penguinCamera.enabled = false;
 
             //so penguin would follow
-            penguin.GetComponent<NavMeshAgent>().enabled = true;
-            penguin.GetComponent<Follow>().enabled = true;
+            //penguin.GetComponent<NavMeshAgent>().enabled = true;
+            //penguin.GetComponent<Follow>().enabled = true;
 
             //so girl isnt following
-            Girl.GetComponent<NavMeshAgent>().enabled = false;
-            Girl.GetComponent<Follow>().enabled = false;
+            //Girl.GetComponent<NavMeshAgent>().enabled = false;
+            //Girl.GetComponent<Follow>().enabled = false;
 
 
             //change girls character
@@ -70,20 +70,20 @@ public class SwapCharacters : MonoBehaviour
             // girlCamera.enabled = false;
 
             // so penguin wont follow
-            penguin.GetComponent<NavMeshAgent>().enabled = false;
-            penguin.GetComponent<Follow>().enabled = false;
+           // penguin.GetComponent<NavMeshAgent>().enabled = false;
+            //penguin.GetComponent<Follow>().enabled = false;
 
             // so girl will follow
-            Girl.GetComponent<NavMeshAgent>().enabled = true;
-            Girl.GetComponent<Follow>().enabled = true;
+            //Girl.GetComponent<NavMeshAgent>().enabled = true;
+            //Girl.GetComponent<Follow>().enabled = true;
 
             //change penguins characters
-            penguinchildpenguin.SetActive(true);
-            Girlchildpenguin.SetActive(false);
+            penguinchildpenguin.SetActive(false);
+            Girlchildpenguin.SetActive(true);
 
             //change girls character
-            Girlchildgirl.SetActive(true);
-            penguinchildgirl.SetActive(false);
+            Girlchildgirl.SetActive(false);
+            penguinchildgirl.SetActive(true);
 
             //swap positions
 
