@@ -15,12 +15,12 @@ public class PianoPuzzle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Right1.GetComponent<Image>().material.color = Color.white;
-        Right2.GetComponent<Image>().material.color = Color.white;
-        Right3.GetComponent<Image>().material.color = Color.white;
-        Right4.GetComponent<Image>().material.color = Color.white;
-        Right5.GetComponent<Image>().material.color = Color.white;
-        Right6.GetComponent<Image>().material.color = Color.white;
+        Right1.GetComponent<Image>().color = Color.white;
+        Right2.GetComponent<Image>().color = Color.white;
+        Right3.GetComponent<Image>().color = Color.white;
+        Right4.GetComponent<Image>().color = Color.white;
+        Right5.GetComponent<Image>().color = Color.white;
+        Right6.GetComponent<Image>().color = Color.white;
     }
 
     // Update is called once per frame
@@ -31,24 +31,24 @@ public class PianoPuzzle : MonoBehaviour
 
     public void WrongKey()
     {
-        Right1.GetComponent<Image>().material.color = Color.white;
-        Right2.GetComponent<Image>().material.color = Color.white;
-        Right3.GetComponent<Image>().material.color = Color.white;
-        Right4.GetComponent<Image>().material.color = Color.white;
-        Right5.GetComponent<Image>().material.color = Color.white;
-        Right6.GetComponent<Image>().material.color = Color.white;
+        Right1.GetComponent<Image>().color = Color.white;
+        Right2.GetComponent<Image>().color = Color.white;
+        Right3.GetComponent<Image>().color = Color.white;
+        Right4.GetComponent<Image>().color = Color.white;
+        Right5.GetComponent<Image>().color = Color.white;
+        Right6.GetComponent<Image>().color = Color.white;
     }
 
     public void FirstKey()
     {
-        Right1.GetComponent<Image>().material.color = Color.green;
+        Right1.GetComponent<Image>().color = Color.green;
     }
 
     public void SecondKey()
     {
-        if(Right1.GetComponent<Image>().material.color == Color.green)
+        if(Right1.GetComponent<Image>().color == Color.green)
         {
-            Right2.GetComponent<Image>().material.color = Color.green;
+            Right2.GetComponent<Image>().color = Color.green;
         }
        
         else
@@ -59,11 +59,11 @@ public class PianoPuzzle : MonoBehaviour
 
     public void ThirdKey()
     {
-        if (Right1.GetComponent<Image>().material.color == Color.green)
+        if (Right1.GetComponent<Image>().color == Color.green)
         {
-            if (Right2.GetComponent<Image>().material.color == Color.green)
+            if (Right2.GetComponent<Image>().color == Color.green)
             {
-                Right3.GetComponent<Image>().material.color = Color.green;
+                Right3.GetComponent<Image>().color = Color.green;
             }
         } 
         
@@ -75,13 +75,13 @@ public class PianoPuzzle : MonoBehaviour
 
     public void ForthKey()
     {
-        if (Right1.GetComponent<Image>().material.color == Color.green)
+        if (Right1.GetComponent<Image>().color == Color.green)
         {
-            if (Right2.GetComponent<Image>().material.color == Color.green)
+            if (Right2.GetComponent<Image>().color == Color.green)
             {
-                if (Right3.GetComponent<Image>().material.color == Color.green)
+                if (Right3.GetComponent<Image>().color == Color.green)
                 {
-                    Right4.GetComponent<Image>().material.color = Color.green;
+                    Right4.GetComponent<Image>().color = Color.green;
                 }
             }
         }
@@ -94,15 +94,15 @@ public class PianoPuzzle : MonoBehaviour
 
     public void FifthKey()
     {
-        if (Right1.GetComponent<Image>().material.color == Color.green)
+        if (Right1.GetComponent<Image>().color == Color.green)
         {
-            if (Right2.GetComponent<Image>().material.color == Color.green)
+            if (Right2.GetComponent<Image>().color == Color.green)
             {
-                if (Right3.GetComponent<Image>().material.color == Color.green)
+                if (Right3.GetComponent<Image>().color == Color.green)
                 {
-                    if (Right4.GetComponent<Image>().material.color == Color.green)
+                    if (Right4.GetComponent<Image>().color == Color.green)
                     {
-                        Right5.GetComponent<Image>().material.color = Color.green;
+                        Right5.GetComponent<Image>().color = Color.green;
                     }
                 }
             }
@@ -116,17 +116,17 @@ public class PianoPuzzle : MonoBehaviour
 
     public void SixthKey()
     {
-        if (Right1.GetComponent<Image>().material.color == Color.green)
+        if (Right1.GetComponent<Image>().color == Color.green)
         {
-            if (Right2.GetComponent<Image>().material.color == Color.green)
+            if (Right2.GetComponent<Image>().color == Color.green)
             {
-                if (Right3.GetComponent<Image>().material.color == Color.green)
+                if (Right3.GetComponent<Image>().color == Color.green)
                 {
-                    if (Right4.GetComponent<Image>().material.color == Color.green)
+                    if (Right4.GetComponent<Image>().color == Color.green)
                     {
-                        if(Right5.GetComponent<Image>().material.color == Color.green)
+                        if(Right5.GetComponent<Image>().color == Color.green)
                         {
-                            Right6.GetComponent<Image>().material.color = Color.green;
+                            Right6.GetComponent<Image>().color = Color.green;
                         }
                     }
                 }
