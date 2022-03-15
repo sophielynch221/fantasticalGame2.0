@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1521.6
     height: 766.4
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Project
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 21
+  controlID: 26
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -94,8 +94,8 @@ MonoBehaviour:
     y: 0
     width: 288
     height: 424
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -317,22 +317,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\rclar\OneDrive\ARCHIVE\Documents\fantasticalGame2.0\RebeccaSophie
     (1)
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 4.5999756}
-    m_SelectedIDs: 085f0000
-    m_LastClickedID: 24328
+    scrollPos: {x: 0, y: 40.599976}
+    m_SelectedIDs: bc5e0000
+    m_LastClickedID: 24252
     m_ExpandedIDs: 00000000bc5e0000be5e0000c05e0000c25e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -405,7 +405,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -489,9 +489,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 785d0000
-      m_LastClickedID: 23928
-      m_ExpandedIDs: 1afbffff2a5d0000785d0000245e0000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: c4f9ffff1afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -740,9 +740,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 543.96375, y: -192.78735, z: 495.81073}
+    m_Target: {x: -101.135864, y: -579.4402, z: 1258.0906}
     speed: 2
-    m_Value: {x: 543.96375, y: -192.78735, z: 495.81073}
+    m_Value: {x: -101.135864, y: -579.4402, z: 1258.0906}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -789,17 +789,17 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.32574385, y: 0.0076554725, z: -0.00263769, w: -0.94542325}
+    m_Target: {x: -0.22019097, y: 0.050304797, z: -0.011374523, w: -0.9741002}
     speed: 2
-    m_Value: {x: -0.32574388, y: 0.0076554734, z: -0.0026376902, w: -0.94542336}
+    m_Value: {x: -0.2201542, y: 0.053226467, z: -0.012034953, w: -0.9739375}
   m_Size:
-    m_Target: 386.89334
+    m_Target: 916.2078
     speed: 2
-    m_Value: 386.89334
+    m_Value: 916.2078
   m_Ortho:
-    m_Target: 1
+    m_Target: 0
     speed: 2
-    m_Value: 1
+    m_Value: 0
   m_CameraSettings:
     m_Speed: 1
     m_SpeedNormalized: 0.5
@@ -871,8 +871,8 @@ MonoBehaviour:
     vZoomLockedByDefault: 0
     m_HBaseRangeMin: -348.63998
     m_HBaseRangeMax: 348.63998
-    m_VBaseRangeMin: -152.8
-    m_VBaseRangeMax: 152.8
+    m_VBaseRangeMin: -161.2
+    m_VBaseRangeMax: 161.2
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -889,11 +889,11 @@ MonoBehaviour:
     m_DrawArea:
       serializedVersion: 2
       x: 0
-      y: 21
+      y: 0
       width: 871.6
-      height: 382
+      height: 403
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 435.8, y: 191}
+    m_Translation: {x: 435.8, y: 201.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -901,9 +901,9 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -435.8
-      y: -191
+      y: -201.5
       width: 871.6
-      height: 382
+      height: 403
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1089.5, y: 503.75}
