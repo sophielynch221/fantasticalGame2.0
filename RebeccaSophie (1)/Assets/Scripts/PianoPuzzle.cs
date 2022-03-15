@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PianoPuzzle : MonoBehaviour
 {
@@ -65,6 +66,11 @@ public class PianoPuzzle : MonoBehaviour
             {
                 Right3.GetComponent<Image>().color = Color.green;
             }
+
+            else
+            {
+                WrongKey();
+            }
         } 
         
         else
@@ -83,6 +89,16 @@ public class PianoPuzzle : MonoBehaviour
                 {
                     Right4.GetComponent<Image>().color = Color.green;
                 }
+
+                else
+                {
+                    WrongKey();
+                }
+            }
+           
+            else
+            {
+                WrongKey();
             }
         }
        
@@ -104,7 +120,22 @@ public class PianoPuzzle : MonoBehaviour
                     {
                         Right5.GetComponent<Image>().color = Color.green;
                     }
+
+                    else
+                    {
+                        WrongKey();
+                    }
                 }
+
+                else
+                {
+                    WrongKey();
+                }
+            }
+
+            else
+            {
+                WrongKey();
             }
         }
        
@@ -128,14 +159,57 @@ public class PianoPuzzle : MonoBehaviour
                         {
                             Right6.GetComponent<Image>().color = Color.green;
                         }
+                       
+                        else
+                        {
+                            WrongKey();
+                        }
+                    }
+
+                    else
+                    {
+                        WrongKey();
                     }
                 }
+
+                else
+                {
+                    WrongKey();
+                }
+            }
+
+            else
+            {
+                WrongKey();
             }
         }
         
         else
         {
             WrongKey();
+        }
+    }
+
+    public void RightSequence()
+    {
+        if (Right1.GetComponent<Image>().color == Color.green)
+        {
+            if (Right2.GetComponent<Image>().color == Color.green)
+            {
+                if (Right3.GetComponent<Image>().color == Color.green)
+                {
+                    if (Right4.GetComponent<Image>().color == Color.green)
+                    {
+                        if (Right5.GetComponent<Image>().color == Color.green)
+                        {
+                            if (Right6.GetComponent<Image>().color == Color.green)
+                            {
+                                SceneManager.LoadScene("Sophie");
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

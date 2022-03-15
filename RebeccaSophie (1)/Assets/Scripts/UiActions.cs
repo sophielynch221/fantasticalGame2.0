@@ -36,4 +36,6 @@ public class UiActions : MonoBehaviour
     {
         SceneManager.LoadScene("Sophie");
     }
+
+
 }

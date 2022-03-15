@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class SwapCharacters : MonoBehaviour
 {
     public bool swap;
-  //  public GameObject Girl;
+    //public GameObject Girl;
     //public GameObject penguin;
 
     public GameObject Girlchildgirl;
@@ -54,7 +54,6 @@ public class SwapCharacters : MonoBehaviour
 
 
             //swap positions
-
 
             //girl can run
             //  Girl.GetComponent<CharacterController>().enabled = true;
