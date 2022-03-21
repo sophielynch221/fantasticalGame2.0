@@ -12,6 +12,7 @@ public class SceneChange : MonoBehaviour
         if (col.gameObject.CompareTag("Player"))
         {
             changeScene.Invoke();
+
         }
     }
 }
