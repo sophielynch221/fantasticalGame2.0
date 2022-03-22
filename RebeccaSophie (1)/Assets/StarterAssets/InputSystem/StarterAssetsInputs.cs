@@ -45,6 +45,7 @@ namespace StarterAssets
 		{
 			SprintInput(value.isPressed);
 		}
+
 #else
 	// old input sys if we do decide to have it (most likely wont)...
 #endif
@@ -82,8 +83,10 @@ namespace StarterAssets
 			Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;
 		}
 
+       
+
 #endif
 
-	}
+    }
 	
 }
