@@ -5,6 +5,7 @@ using UnityEngine.AI;
 
 public class SwapCharacters : MonoBehaviour
 {
+    #region wrong
     public bool swap;
     //public GameObject Girl;
     //public GameObject penguin;
@@ -18,7 +19,7 @@ public class SwapCharacters : MonoBehaviour
     //public Transform girlPosition;
     //public Transform penguinPosition;
 
-   // public Camera girlCamera;
+    // public Camera girlCamera;
     //public Camera penguinCamera;
     // Start is called before the first frame update
     void Start()
@@ -31,6 +32,8 @@ public class SwapCharacters : MonoBehaviour
     {
         if (swap) //girl is active
         {
+            
+
             //camera
           //  girlCamera.enabled = true;
            // penguinCamera.enabled = false;
@@ -61,15 +64,16 @@ public class SwapCharacters : MonoBehaviour
             //penguin cant run
             //  penguin.GetComponent<CharacterController>().enabled = false; 
         }
-
         if (!swap) //penguin
         {
+
+            
             //camera
-           // penguinCamera.enabled = true;
+            // penguinCamera.enabled = true;
             // girlCamera.enabled = false;
 
             // so penguin wont follow
-           // penguin.GetComponent<NavMeshAgent>().enabled = false;
+            // penguin.GetComponent<NavMeshAgent>().enabled = false;
             //penguin.GetComponent<Follow>().enabled = false;
 
             // so girl will follow
@@ -96,8 +100,27 @@ public class SwapCharacters : MonoBehaviour
         }
     }
 
+    #endregion
+
+    public GameObject girlmesh;
+    public GameObject penguinmesh;
+    public Vector3 temp;
+
+
+
+
+
     void OnChangecharacter()
     {
-        swap = !swap;
+        //swap = !swap;
+        changepositions();
+    }
+
+
+    void changepositions()
+    {
+        temp = girlmesh.transform.position;
+        girlmesh.transform.position = penguinmesh.transform.position;
+        penguinmesh.transform.position = temp;
     }
 }

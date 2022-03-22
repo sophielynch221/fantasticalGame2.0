@@ -159,6 +159,9 @@ MonoBehaviour:
   penguinchildgirl: {fileID: 968167506}
   Girlchildpenguin: {fileID: 674364880}
   penguinchildpenguin: {fileID: 1534352711}
+  girlmesh: {fileID: 2374956643292548739}
+  penguinmesh: {fileID: 385580046}
+  temp: {x: 0, y: 0, z: 0}
 --- !u!114 &44932534
 MonoBehaviour:
   m_ObjectHideFlags: 0
