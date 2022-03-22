@@ -154,8 +154,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   swap: 0
-  Girl: {fileID: 2374956643292548739}
-  penguin: {fileID: 385580046}
   Girlchildgirl: {fileID: 4201745224222197002}
   penguinchildgirl: {fileID: 968167506}
   Girlchildpenguin: {fileID: 674364880}
