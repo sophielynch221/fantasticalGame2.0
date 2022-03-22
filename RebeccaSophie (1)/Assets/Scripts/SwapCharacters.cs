@@ -108,11 +108,9 @@ public class SwapCharacters : MonoBehaviour
 
 
 
-
-
     void OnChangecharacter()
     {
-        //swap = !swap;
+        swap = !swap;
         changepositions();
     }
 

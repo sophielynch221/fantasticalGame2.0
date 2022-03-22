@@ -37,5 +37,13 @@ public class UiActions : MonoBehaviour
         SceneManager.LoadScene("Sophie");
     }
 
+    public void GetCursor()
+    {
+        Cursor.lockState = CursorLockMode.None;
+    }
 
+    public void GetRidOfCursor()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
 }
