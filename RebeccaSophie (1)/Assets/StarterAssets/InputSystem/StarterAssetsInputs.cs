@@ -22,8 +22,14 @@ namespace StarterAssets
 		public bool cursorInputForLook = true;
 #endif
 
+        private void Start()
+        {
+			SetCursorState(cursorLocked);
+			
+		}
+
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
-		public void OnMove(InputValue value)
+        public void OnMove(InputValue value)
 		{
 			MoveInput(value.Get<Vector2>());
 		}

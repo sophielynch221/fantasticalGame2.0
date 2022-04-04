@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class UiActions : MonoBehaviour
 {
+   // public StarterAssets.StarterAssetsInputs mystarterAssets;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,11 +42,13 @@ public class UiActions : MonoBehaviour
 
     public void GetCursor()
     {
+       // mystarterAssets.SetCursorState(true);
         Cursor.lockState = CursorLockMode.None;
     }
 
     public void GetRidOfCursor()
     {
+       // mystarterAssets.SetCursorState(false);
         Cursor.lockState = CursorLockMode.Locked;
     }
 }
