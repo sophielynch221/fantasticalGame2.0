@@ -25,6 +25,7 @@ namespace StarterAssets
         private void Start()
         {
 			SetCursorState(cursorLocked);
+			
 		}
 
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
