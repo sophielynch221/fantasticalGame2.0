@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class FinishJigsaw : MonoBehaviour
 {
+
+    public bool DidIWin;
     [SerializeField] private GameObject piece1;
     [SerializeField] private GameObject piece2;
     [SerializeField] private GameObject piece3;
@@ -25,6 +27,7 @@ public class FinishJigsaw : MonoBehaviour
     void Start()
     {
         AnswerImage.SetActive(false);
+        DidIWin = false;
     }
 
     // Update is called once per frame
@@ -41,7 +44,8 @@ public class FinishJigsaw : MonoBehaviour
             Debug.Log("Well Done");
             AnswerImage.SetActive(true);
             LeanTween.scale(AnswerImage, new Vector3(5f, 3f),1.5f).setEase(LeanTweenType.clamp);
-           // AnswerImage.GetComponent<RectTransform>().localScale = new Vector3(5f, 5f, 5f);
+            // AnswerImage.GetComponent<RectTransform>().localScale = new Vector3(5f, 5f, 5f);
+            DidIWin = true;
         }
     }
 }

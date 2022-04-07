@@ -6,13 +6,29 @@ using UnityEngine.Events;
 
 public class SceneChange : MonoBehaviour
 {
+    
     public UnityEvent changeScene;
+    public UnityEvent ifnotenough;
+    public UnityEvent TurnOff;
     void OnTriggerEnter(Collider col)
     {
         if (col.gameObject.CompareTag("Player"))
         {
-            changeScene.Invoke();
+
+            if(col.gameObject.GetComponent<Inventory>().yay == true)
+            {
+                changeScene.Invoke();
+            }
+
+            else
+            {
+                ifnotenough.Invoke();
+                Invoke("TurnOff", 2f);
+            }
+
 
         }
     }
+
+
 }
