@@ -27,6 +27,7 @@ public class FinishJigsaw : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if(piece1.GetComponent<RectTransform>().anchoredPosition == placeholder1.GetComponent<RectTransform>().anchoredPosition &&
            piece2.GetComponent<RectTransform>().anchoredPosition == placeholder2.GetComponent<RectTransform>().anchoredPosition &&
            piece3.GetComponent<RectTransform>().anchoredPosition == placeholder3.GetComponent<RectTransform>().anchoredPosition &&
