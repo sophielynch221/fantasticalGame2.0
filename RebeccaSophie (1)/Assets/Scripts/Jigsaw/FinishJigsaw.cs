@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FinishJigsaw : MonoBehaviour
 {
@@ -18,10 +19,12 @@ public class FinishJigsaw : MonoBehaviour
     [SerializeField] private GameObject placeholder5;
     [SerializeField] private GameObject placeholder6;
 
+    [SerializeField] private GameObject AnswerImage;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        AnswerImage.SetActive(false);
     }
 
     // Update is called once per frame
@@ -36,6 +39,9 @@ public class FinishJigsaw : MonoBehaviour
            piece6.GetComponent<RectTransform>().anchoredPosition == placeholder6.GetComponent<RectTransform>().anchoredPosition)
         {
             Debug.Log("Well Done");
+            AnswerImage.SetActive(true);
+            LeanTween.scale(AnswerImage, new Vector3(5f, 3f),1.5f).setEase(LeanTweenType.clamp);
+           // AnswerImage.GetComponent<RectTransform>().localScale = new Vector3(5f, 5f, 5f);
         }
     }
 }
