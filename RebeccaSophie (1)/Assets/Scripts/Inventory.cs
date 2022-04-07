@@ -26,7 +26,7 @@ public class Inventory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (PianoPieces == 5f)
+        if (PianoPieces == 3f)
         {
             yay = true;
         }
@@ -42,11 +42,13 @@ public class Inventory : MonoBehaviour
         if (other.gameObject.CompareTag("Piano"))
         {
             PianoPieces++;
+            other.gameObject.SetActive(false);
         }
 
         if (other.gameObject.CompareTag("Jigsaw"))
         {
             JigsawPuzzle++;
+
         }
 
 
