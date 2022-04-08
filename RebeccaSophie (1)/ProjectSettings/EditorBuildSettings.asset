@@ -14,14 +14,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Piano.unity
     guid: b72053ac6ea410b4e8bcd12d2e5d4e00
-  - enabled: 0
-    path: Assets/Scenes/Jigsaw.unity
-    guid: 1ea3bc7db93b57c479c39f9c55b1fdf7
-  - enabled: 1
-    path: Assets/Scenes/Sophie.unity
-    guid: c48ed0629f3112540843f9a688e9e7fc
   - enabled: 1
     path: Assets/Scenes/Jigsaw2.unity
     guid: 18606d41ba8826f4faf4ada7641c7d02
+  - enabled: 0
+    path: Assets/Scenes/Jigsaw.unity
+    guid: 1ea3bc7db93b57c479c39f9c55b1fdf7
+  - enabled: 0
+    path: Assets/Scenes/Sophie.unity
+    guid: c48ed0629f3112540843f9a688e9e7fc
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}
