@@ -8,23 +8,23 @@ public class SceneChange : MonoBehaviour
 {
     
     public UnityEvent changeScene;
-    public UnityEvent ifnotenough;
-    public UnityEvent TurnOff;
+ //   public UnityEvent ifnotenough;
+   // public UnityEvent TurnOff;
     void OnTriggerEnter(Collider col)
     {
         if (col.gameObject.CompareTag("Player"))
         {
 
-            if(col.gameObject.GetComponent<Inventory>().yay == true)
-            {
+     //       if(col.gameObject.GetComponent<Inventory>().AllPianoPieces == true)
+       //     {
                 changeScene.Invoke();
-            }
+         //   }
 
-            else
-            {
-                ifnotenough.Invoke();
-                Invoke("TurnOff", 2f);
-            }
+           // else
+            //{
+              //  ifnotenough.Invoke();
+                //Invoke("TurnOff", 2f);
+            //}
 
 
         }
