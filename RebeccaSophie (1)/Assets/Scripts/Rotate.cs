@@ -5,7 +5,7 @@ using UnityEngine;
 public class Rotate : MonoBehaviour
 {
     [SerializeField] private GameObject Inventory;
-    public bool piano;
+    //public bool piano;
     public float rotatespeed;
     // Start is called before the first frame update
     void Start()
@@ -22,15 +22,17 @@ public class Rotate : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            if (piano)
-            {
-                Inventory.GetComponent<Inventory>().PianoPieces++; ;
-            }
+         //   if (piano)
+           // {
+                Inventory.GetComponent<Inventory>().PianoPieces++;
+                this.gameObject.SetActive(false);
+            //}
             
-            if (!piano)
+            /*if (!piano)
             {
                 Inventory.GetComponent<Inventory>().JigsawPuzzle++;
-            }
+                this.gameObject.SetActive(false);
+            }*/
         }
     }
 
