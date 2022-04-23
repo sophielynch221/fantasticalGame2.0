@@ -12,7 +12,7 @@ public class CutScene : MonoBehaviour
     [SerializeField] private Image Image4;
     [SerializeField] private Image Image5;
 
-    void Update()
+    void Start()
     {
         Invoke("Fade1", 5f);
         Invoke("Fade2", 10f);
