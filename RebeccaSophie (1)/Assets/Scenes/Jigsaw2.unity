@@ -795,6 +795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64a37602175a4954f9af69184b6074a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DidIWin: 0
   piece1: {fileID: 2092461268}
   piece2: {fileID: 2126818277}
   piece3: {fileID: 19126849}
