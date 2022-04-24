@@ -16,6 +16,10 @@ namespace StarterAssets
 		[Header("Movement Settings")]
 		public bool analogMovement;
 
+		[Header("Animator")]
+		//public Animator girlAnimator;
+		public GameObject player;
+
 #if !UNITY_IOS || !UNITY_ANDROID
 		[Header("Mouse Cursor Settings")]
 		public bool cursorLocked = true;
@@ -25,6 +29,7 @@ namespace StarterAssets
         private void Start()
         {
 			SetCursorState(cursorLocked);
+			//girlAnimator = gameObject.GetComponent<Animator>();
 			
 		}
 
@@ -32,6 +37,8 @@ namespace StarterAssets
         public void OnMove(InputValue value)
 		{
 			MoveInput(value.Get<Vector2>());
+			player.GetComponent<Animator>().SetBool("walking", true);
+			Invoke("OnMoveExit", 1f);
 		}
 
 		public void OnLook(InputValue value)
@@ -45,13 +52,34 @@ namespace StarterAssets
 		public void OnJump(InputValue value)
 		{
 			JumpInput(value.isPressed);
+			player.GetComponent<Animator>().SetBool("jump", true);
+			//player.GetComponent<Animator>().SetTrigger("jumpOne");
+			Invoke("OnJumpExit", 1f);
 		}
+
 
 		public void OnSprint(InputValue value)
 		{
 			SprintInput(value.isPressed);
+			player.GetComponent<Animator>().SetBool("running", true);
+			Invoke("OnSprintExit", 4f);
 		}
 
+
+		public void OnJumpExit(InputValue value)
+		{
+			player.GetComponent<Animator>().SetBool("jump", false);
+		}
+
+		public void OnMoveExit(InputValue value)
+		{
+			player.GetComponent<Animator>().SetBool("walking", false);
+		}
+
+		public void OnSprintExit(InputValue value)
+		{
+			player.GetComponent<Animator>().SetBool("running", false);
+		}
 #else
 	// old input sys if we do decide to have it (most likely wont)...
 #endif
