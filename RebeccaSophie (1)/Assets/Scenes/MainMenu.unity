@@ -209,7 +209,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 543842702}
         m_TargetAssemblyTypeName: UiActions, Assembly-CSharp
-        m_MethodName: OpenMainScene
+        m_MethodName: OpenCutScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

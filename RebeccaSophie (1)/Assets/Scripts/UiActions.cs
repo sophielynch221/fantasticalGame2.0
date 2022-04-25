@@ -45,6 +45,11 @@ public class UiActions : MonoBehaviour
         SceneManager.LoadScene("MainGameWorldTWO");
     }
 
+    public void OpenCutScene()
+    {
+        SceneManager.LoadScene("CutScene");
+    }
+
     public void GetCursor()
     {
        // mystarterAssets.SetCursorState(true);
