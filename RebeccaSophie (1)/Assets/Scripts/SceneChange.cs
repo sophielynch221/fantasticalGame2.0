@@ -6,13 +6,29 @@ using UnityEngine.Events;
 
 public class SceneChange : MonoBehaviour
 {
+    [SerializeField] private GameObject inventory;
     public UnityEvent changeScene;
+    public UnityEvent ifnotenough;
+    public UnityEvent TurnOff;
     void OnTriggerEnter(Collider col)
     {
         if (col.gameObject.CompareTag("Player"))
         {
-            changeScene.Invoke();
+
+            if(inventory.GetComponent<Inventory>().PianoPieces ==3)
+            {
+                changeScene.Invoke();
+            }
+
+            else
+            {
+                ifnotenough.Invoke();
+                Invoke("TurnOff", 2f);
+            }
+
 
         }
     }
+
+
 }

@@ -32,12 +32,12 @@ public class UiActions : MonoBehaviour
 
     public void OpenJigsawScene()
     {
-        SceneManager.LoadScene("Jigsaw");
+        SceneManager.LoadScene("Jigsaw2");
     }
 
     public void OpenMainScene()
     {
-        SceneManager.LoadScene("Sophie");
+        SceneManager.LoadScene("MainGameWorld");
     }
 
     public void GetCursor()

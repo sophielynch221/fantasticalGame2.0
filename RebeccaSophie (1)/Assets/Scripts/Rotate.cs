@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Rotate : MonoBehaviour
 {
+    [SerializeField] private GameObject Inventory;
+    //public bool piano;
     public float rotatespeed;
     // Start is called before the first frame update
     void Start()
@@ -16,4 +18,22 @@ public class Rotate : MonoBehaviour
     {
         this.transform.Rotate(0f,30f*rotatespeed*Time.deltaTime, 0f, Space.Self);
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+         //   if (piano)
+           // {
+                Inventory.GetComponent<Inventory>().PianoPieces++;
+                this.gameObject.SetActive(false);
+            //}
+            
+            /*if (!piano)
+            {
+                Inventory.GetComponent<Inventory>().JigsawPuzzle++;
+                this.gameObject.SetActive(false);
+            }*/
+        }
+    }
+
 }
