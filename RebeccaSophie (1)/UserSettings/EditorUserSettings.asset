@@ -11,6 +11,7 @@ EditorUserSettings:
     RecentlyUsedSceneGuid-1:
       value: 550951075702585f090f5f7013775c42464e1d7e78797f327d704c31b0b26c60
       flags: 0
+<<<<<<< HEAD
     RecentlyUsedSceneGuid-2:
       value: 5a55525e5651510c5459592314220c44104f41297a7d253478704865b2b56761
       flags: 0
@@ -22,6 +23,22 @@ EditorUserSettings:
       flags: 0
     RecentlyUsedSceneGuid-5:
       value: 56570d0700010a5f095d0d7040705e444f161d2b757e2764742f1963b0b7353b
+=======
+    RecentlyUsedSceneGuid-5:
+      value: 5209025653515d0a0f0f547a4275594410161e7e2d2c27677b7d4c30b5e4646a
+      flags: 0
+    RecentlyUsedSceneGuid-6:
+      value: 01060656500608585b0b0d7641735d44134f1a29287974347f2c4837b6e56468
+      flags: 0
+    RecentlyUsedSceneGuid-7:
+      value: 53040c0207055f0f545c0d7740770644404f1c7d787e7e36742a4431e6b96d3c
+      flags: 0
+    RecentlyUsedSceneGuid-8:
+      value: 56570d0700010a5f095d0d7040705e444f161d2b757e2764742f1963b0b7353b
+      flags: 0
+    RecentlyUsedSceneGuid-9:
+      value: 5a55525e5651510c5459592314220c44104f41297a7d253478704865b2b56761
+>>>>>>> Kieran
       flags: 0
     RecentlyUsedSceneGuid-6:
       value: 5a52575506075c590c5d5c7248210a44174f1e72757c73607c284f65bbe13261
