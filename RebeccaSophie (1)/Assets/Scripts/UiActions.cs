@@ -37,7 +37,12 @@ public class UiActions : MonoBehaviour
 
     public void OpenMainScene()
     {
-        SceneManager.LoadScene("MainGameWorld");
+        SceneManager.LoadScene("MainGameWorldONE");
+    }
+
+    public void OpenMainSceneFinal()
+    {
+        SceneManager.LoadScene("MainGameWorldTWO");
     }
 
     public void GetCursor()
