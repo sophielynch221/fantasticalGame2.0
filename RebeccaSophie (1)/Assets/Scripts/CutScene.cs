@@ -98,6 +98,6 @@ public class CutScene : MonoBehaviour
 
     private void changescene()
     {
-        SceneManager.LoadScene("MainGameWorld");
+        SceneManager.LoadScene("MainGameWorldONE");
     }
 }
