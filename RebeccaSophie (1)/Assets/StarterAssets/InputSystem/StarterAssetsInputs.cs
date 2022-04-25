@@ -66,17 +66,17 @@ namespace StarterAssets
 		}
 
 
-		public void OnJumpExit(InputValue value)
+		public void OnJumpExit()
 		{
 			player.GetComponent<Animator>().SetBool("jump", false);
 		}
 
-		public void OnMoveExit(InputValue value)
+		public void OnMoveExit()
 		{
 			player.GetComponent<Animator>().SetBool("walking", false);
 		}
 
-		public void OnSprintExit(InputValue value)
+		public void OnSprintExit()
 		{
 			player.GetComponent<Animator>().SetBool("running", false);
 		}
