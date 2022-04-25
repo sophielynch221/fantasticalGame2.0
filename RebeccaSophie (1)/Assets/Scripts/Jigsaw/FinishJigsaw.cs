@@ -43,7 +43,7 @@ public class FinishJigsaw : MonoBehaviour
         {
             Debug.Log("Well Done");
             AnswerImage.SetActive(true);
-            LeanTween.scale(AnswerImage, new Vector3(5f, 3f),1.5f).setEase(LeanTweenType.clamp);
+            LeanTween.scale(AnswerImage, new Vector3(0.9f, 0.9f), 2f).setEase(LeanTweenType.clamp);
             // AnswerImage.GetComponent<RectTransform>().localScale = new Vector3(5f, 5f, 5f);
             DidIWin = true;
         }
